@@ -67,9 +67,10 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 Describe any challenges encountered while building the app.
     
-* Getting the front end and the back end to communicate to eachother perfectly was the most challenging aspect of the process.
-* There were also a lot of tedious tasks to be done, mostly revolving around the multitude of inline PHP code that keeps the page always up to date.
-* Validating the form was also a little tricky. The front had to check for valiation errors numerous times, where one error could completely change the CSS or HTML of the front end.
+* Sanitizing the dynamic output was a challenge until I found out about the h() function for PHP.
+* I wasn't sure if there was a desired format for the date created so I decided to use Y-m-d H:i:s as a default format.
+* Since I checked the uniqueness of the username as part of the validation stage, I decided it would be more efficient to connect to the database once each time the page loads instead of connecting twice for the SELECT query and the INSERT query separately.
+* Getting the format for the SQL query was probably the most challenging part of the assignment.
 
 ## License
 
