@@ -53,10 +53,10 @@
       
       /* BONUS 1 Validate Whitelisted Characters */
       if (preg_match('/\A[A-Za-z\s\-,\.\']+\Z/', $first_name) == 0) {
-        array_push($errors, 'Username can only contain letters, spaces, and symbols: [-,.\']');
+        array_push($errors, 'First name can only contain letters, spaces, and symbols: [-,.\']');
       }
       if (preg_match('/\A[A-Za-z\s\-,\.\']+\Z/', $last_name) == 0) {
-        array_push($errors, 'Lastname can only contain letters, spaces, and symbols: [-,.\']');
+        array_push($errors, 'Last name can only contain letters, spaces, and symbols: [-,.\']');
       }
       if (preg_match('/\A[A-Za-z0-9_@\.]+\Z/', $email) == 0) {
         array_push($errors, 'Email can only contain letters, numbers, and symbols: [_@.]');
